@@ -12,7 +12,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class PaerserApp {
+public class ParserApp {
 
 	public static void main(String[] args) {
 
@@ -22,8 +22,8 @@ public class PaerserApp {
 			Document doc = Jsoup.connect("https://github.com/egis/handbook/blob/master/Tech-Stack.md").get();
 
 			prepareTags(mainList, parse, doc);
-			JAXBFransofmer.toJSOB(mainList);
-			System.out.println(mainList);
+			
+			System.out.println(JAXBFransofmer.toJSOB(mainList));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
