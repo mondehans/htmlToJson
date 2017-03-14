@@ -3,19 +3,19 @@ package za.net.monde.htmljson;
 import java.util.List;
 
 
-public class CatergoryStack {
+public class CategoryStack {
 
-	private String name;
+	private String area;
 	
 	List<TableDataBase> listOftech;
-	public CatergoryStack(String name, List<TableDataBase> listOftech) {
+	public CategoryStack(String area, List<TableDataBase> listOftech) {
 		super();
 		
-		this.name = name;
+		this.area = area;
 		this.listOftech = listOftech;
 	}
-	public String getName() {
-		return name;
+	public String getArea() {
+		return area;
 	}
 	public List<TableDataBase> getListOftech() {
 		return listOftech;
